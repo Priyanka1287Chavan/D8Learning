@@ -47,10 +47,6 @@ class QrlinkBlock extends BlockBase {
 				);
 			}
 		}
-		
-		$block = Block::load('qr_link_block');
-		$block->setRegion('sidebar-first');
-		$block->save();
-		
+			
   }
 }
