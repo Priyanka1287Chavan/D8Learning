@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - qrcode_demo
+  theme:
+    - bartik
+id: qrlinkblock
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: qr_link_block
+settings:
+  id: qr_link_block
+  label: 'QR Link block'
+  provider: qrcode_demo
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      jugaad_product: jugaad_product
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

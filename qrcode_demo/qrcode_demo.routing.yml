@@ -1,0 +1,7 @@
+qrcode_demo.generateQrLink:
+  path: '/check-qrcode-generation'
+  defaults:
+    _controller: '\Drupal\qrcode_demo\Controller\GenerateQrcodeLink::generateQrLink'
+    _title: 'Generate QR code for link'
+  requirements:
+    _permission: 'administer node'
