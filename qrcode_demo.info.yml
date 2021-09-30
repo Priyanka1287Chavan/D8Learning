@@ -1,5 +1,0 @@
-name: QR Code demo
-description: COnvert link into QR code
-core: 8.x
-type: module
-package: Custom
